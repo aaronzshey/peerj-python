@@ -1,14 +1,17 @@
+needle -outfile=000F001F.needle -asequence=000F.seq -bsequence=001F.seq -gapopen=10 -gapextend=0.5
+Needleman-Wunsch global alignment of two sequences
+
 ########################################
 # Program: needle
-# Rundate: Wed  8 Jan 2025 10:44:07
+# Rundate: Wed  8 Jan 2025 20:08:54
 # Commandline: needle
-#    -outfile out.txt
+#    -outfile 000F001F.needle
 #    -asequence 000F.seq
 #    -bsequence 001F.seq
 #    -gapopen 10
 #    -gapextend 0.5
 # Align_format: srspair
-# Report_file: out.txt
+# Report_file: 000F001F.needle
 ########################################
 
 #=======================================
@@ -172,3 +175,14 @@
 
 #---------------------------------------
 #---------------------------------------
+The beginning of excellent alignment is shown below.
+
+701  CCACTTCCTGATCGAGGGCGACCTGAACCCCGACAACAGCGACGTGGACA   750
+23   CCACTTCCTGATCGAGGGCGACCTGAACCCCGACAACAGCGACGTGGACA    72
+
+
+alignment a left: 
+701
+alignment b left:
+23
+(701, 23)

@@ -1,18 +1,6 @@
 from Bio.Emboss.Applications import NeedleCommandline
 
-# needle cli version
-alignment_a_left = 0
-alignment_b_left = 0
-needle_cline = NeedleCommandline()
-needle_cline.asequence = "000F.seq"
-needle_cline.bsequence = "001F.seq"
-needle_cline.gapopen = 10
-needle_cline.gapextend= 0.5
-needle_cline.outfile = "out.txt"
 
-print(needle_cline)
-stdout, stderr = needle_cline()
-print(stdout + stderr)
 
 def needle_align_to_get_boundaries(f1,f2):
     alignment_a_left = 0
@@ -79,7 +67,11 @@ def needle_align_to_get_boundaries(f1,f2):
             new_line2 = file.readline()
     file.close()
 
+    print("alignment a left: ")
+    print(alignment_a_left)
+    print("alignment b left:")
+    print(alignment_b_left)
     return alignment_a_left, alignment_b_left
 
 
-# print(needle_align_to_get_boundaries("000F.seq", "001F.seq"))
+print(needle_align_to_get_boundaries("000F.seq", "001F.seq"))
